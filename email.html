@@ -7,7 +7,7 @@
  <title>RDVenligne - newsletter</title>
  <style type="text/css">
  #outlook a {padding:0;}
- body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+ body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
  .ExternalClass {width:100%;} 
  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
  #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
@@ -30,9 +30,29 @@
  table td {border-collapse: collapse;}
 		
  table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-		
- a {color: orange;}
-		
+ .background-header { border: 1px solid red; background-color: #ca3852; }
+ .header {}
+ a {color: #FFFFFF; text-decoration:none;}
+ 
+ li { list-style: none;}
+ .nav li {
+	font-size:14px;
+	color: #FFFFFF; 
+    float:left;
+    border-right: 1px solid #FFFFFF;
+	
+}
+ .nav li:last-child {
+    border-right: none;
+}
+.nav a, unsubscribe, facebook, {
+    display:block;
+    text-decoration:none;
+}
+
+p {}
+.bienvenue {color: #FFFFFF; font-size: 32px;}
+.presentation {color: #FFFFFF; font-size:18px;}
  @media only screen and (max-device-width: 480px) {
 
   a[href^="tel"], a[href^="sms"] {
@@ -52,6 +72,48 @@
  </style>
  </head>
 <body>
+<table class="background-header" cellspacing="0" border="0" cellpadding="0" width="100%" height="200"> <!-- all -->
+ <tr>
+ <td width="600" height="200" align="center">
+  <table class="header" cellspacing="0" border="0" cellpadding="0" width="600" height="200" align="center"> <!--header-->
+   <tr>
+    <td valign="top" align="left" height="58" width="600">
+     <ul class="nav">
+      <li><fblike>Partager sur Facebook</fblike><img src="images/px.gif" height="5" width="5"/></li> 
+      <li><img src="images/px.gif" height="5" width="5"/><a href="#">Aller sur le site</a><img src="images/px.gif" height="5" width="5"/></li>
+      <li><img src="images/px.gif" height="5" width="5"/><unsubscribe>Se désinscrire</unsubscribe></li>
+     </ul>
+    </td>
+   </tr>
+   <tr> <!-- mettre les tableaux de logo + bienvenue + présentation -->
+    <td width="600" height="142">
+    <table cellspacing="0" cellpadding="0" border="0" width="182" height="142" align="left"> <!--logo-->
+     <tr>
+     <td>
+      <img src="images/logo.png"/>
+     </td>
+     </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" width="418" height="50" align="left"> <!-- bienvenue -->
+     <tr>
+      <td>
+       <p class="bienvenue">Newsletter du RDV en ligne</p>
+      </td>
+     </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" width="418" height="92" align="left"><!-- présentation-->
+     <tr>
+      <td valign="top" >
+       <p class="presentation">Le site du Guide Biblique pour jeunes de la Ligue pour la lecture de la Bible</p>
+      </td>
+     </tr>
+    </table>
+   </tr>
+  </table><!-- fin header -->
+ </td>
+ </tr>
+</table> <!-- fin all -->
+
 </body>
 </html>
 			
