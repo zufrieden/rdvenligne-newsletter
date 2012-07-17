@@ -12,7 +12,7 @@
  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
  #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
 		
- img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+ img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; padding:0; margin: 0;}
  a img {border:none;}
  .image_fix {display:block;}
 
@@ -20,6 +20,7 @@
 }
  .all-header { background-color: #ca3852; }
  .all-content { background-color: #FFFFFF;}
+ .facebook-titre { background-color: #00b1f2;}
  
  table td {border-collapse: collapse;}
  .titre p {font-size: 36px; color: #ca3852;}
@@ -48,6 +49,9 @@
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; -webkit-margin-end: 0; margin:0; padding:0;}
 .bienvenue {color: #FFFFFF; font-size: 32px;}
 .presentation {color: #FFFFFF; font-size:18px;}
+.facebook { font-size:24px; color:#FFFFFF; text-transform:uppercase; }
+
+
  @media only screen and (max-device-width: 480px) {
   .table[class="max-width"] { width:100%;}
   a[href^="tel"], a[href^="sms"] {
@@ -181,12 +185,31 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
       </table> <!--fin deuxieme post -->
      </td>
     </tr>
+    <tr> <!-- espace -->
+     <td width="600" height="25">
+      <img src="images/px.gif" width="600" height="20"/>
+     </td>
+    </tr> 
    </table> <!-- fin contenu -->
   </td>
  </tr>
 </table> <!-- fin all content -->
-
-
+<table class="facebook-titre" cellspacing="0" border="0" cellpadding="0" width="100%" height="100%"> <!-- banière titre de facebook -->
+ <tr>
+  <td>
+   <table class="banniere" cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center"> <!-- banniere -->
+   <tr>
+    <td width="60" height="60" valign="middle" align="left">
+     <a href="#"><img src="images/fb.png" width="42" height="40"/></a>
+    </td>
+    <td width="540" height="60" valign="middle" align="left">
+     <p class="facebook">Rejoins-nous sur Facebook</p>
+    </td>
+   </tr>
+   </table> <!--fin banniere -->
+  </td>
+ </tr>
+</table> <!-- fin banniere facebook -->
 
 
 </body>
