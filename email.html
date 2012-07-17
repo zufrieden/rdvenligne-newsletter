@@ -57,7 +57,8 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
 .lien_fb { font-size:14px; font-style:italic; color:#d1d1d1;}
 
  @media only screen and (max-device-width: 480px) {
-  .table[class="max-width"] { width:100%;}
+  .table[class="max-width"] { width:100% !important; }
+  .td[class="hide" { display: none !important; }
   a[href^="tel"], a[href^="sms"] {
   text-decoration: none;
   color: black; 
@@ -77,10 +78,11 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
 <body>
 <table class="all-header" cellspacing="0" border="0" cellpadding="0" width="100%" height="200"> <!-- all-header -->
  <tr>
- <td width="600" height="200" align="center">
-  <table class="header" cellspacing="0" border="0" cellpadding="0" width="600" height="200" align="center"> <!--header-->
+  <td width="20" align="center"><img src="images/px.gif" /></td>
+ <td class="max-width" width="600" height="200" align="center">
+ <table class="header" cellspacing="0" border="0" cellpadding="0" height="200" align="center"> <!--header-->
    <tr>
-    <td valign="top" align="left" height="58" width="600">
+    <td valign="top" align="left" height="58" >
      <img src="images/px.gif" height="5" width="5"/>
      <ul class="nav">
       <li><fblike>Partager sur Facebook</fblike><img src="images/px.gif" height="5" width="5"/></li> 
@@ -90,7 +92,7 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
     </td>
    </tr>
    <tr> <!-- mettre les tableaux de logo + bienvenue + présentation -->
-    <td width="600" height="142">
+    <td width="100%" height="142">
     <table cellspacing="0" cellpadding="0" border="0" width="182" height="142" align="left"> <!--logo-->
      <tr>
      <td width="182" height="142" valign="top">
@@ -109,19 +111,17 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
      </tr>
     </table>
    </tr>
-  </table><!-- fin header -->
+</table><!-- fin header -->
  </td>
  </tr>
 </table> <!-- fin all-header -->
 <table class="all-content" cellspacing="0" border="0" cellpadding="0" width="100%" height="100%"> <!-- all -->
  <tr>
-  <td width="20" height="200" align="left">
-  <img src="px.gif" width="1 "height="1"/>
- </td>
+   <td width="20" align="center"><img src="images/px.gif" /></td>
   <td>
-   <table class="content" cellspacing="0" border="0" cellpadding="0" width="600" height="100%" align="center"> <!-- contenu -->
+   <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="100%" align="center"> <!-- contenu -->
     <tr>
-     <td width="600" height="220">
+     <td height="220">
        <!-- premier post -->
       <table class="post" cellspacing="0" border="0" cellpadding="0" width="600" height="220" align="left"> <!-- premier post -->
        <tr>
@@ -204,6 +204,7 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
 </table> <!-- fin all content -->
 <table class="facebook-titre" cellspacing="0" border="0" cellpadding="0" width="100%" height="60"> <!-- banière titre de facebook -->
  <tr>
+  <td width="20" align="center"><img src="images/px.gif" /></td>
   <td>
    <table class="banniere" cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center"> <!-- banniere -->
    <tr>
@@ -220,8 +221,9 @@ p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; 
 </table> <!-- fin banniere facebook -->
 <table class="facebook-all" cellspacing="0" border="0" cellpadding="0" width="100%" height="341"> <!-- all facebook -->
  <tr>
+  <td width="20" align="center"><img src="images/px.gif" /></td>
   <td>
-   <table class="facebook" cellspacing="0" border="0" cellpadding="0" width="600" height="341" align="center"> <!-- facebook -->
+   <table class="max-witdh" cellspacing="0" border="0" cellpadding="0" width="600" height="341" align="center"> <!-- facebook -->
     <tr>
      <td height="150" valign="bottom">
       <table cellspacing="0" border="0" cellpadding="0" width="600" height="150" align="left">
