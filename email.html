@@ -18,16 +18,15 @@
  
 a { text-decoration:none; }
  ul { padding:0; margin:0;}
- ul.nav {margin-left:20px;}
  li { list-style: none; }
- .nav li { font-size:14px; color: #FFFFFF; float:left; border-right: 1px solid #FFFFFF; padding-left: 10px; padding-right: 10px; }
+ .nav li { font-size:14px; color: #FFFFFF; float:left; border-right: 1px solid #FFFFFF; padding-left:10px; padding-right:10px;}
  .nav li a { color: white;}
 
- .nav a, unsubscribe, facebook, { display:block; text-decoration:none; }
+ .nav a, unsubscribe, facebook, { display:block; }
  table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing: 0px;}
  
  table td {border-collapse: collapse;}
- .titre p {color: white;}
+
 p { -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-margin-start: 0; -webkit-margin-end: 0; margin:0; padding:0;}
 p.facebook a {color: #8c8c8c; ;}
 
@@ -38,8 +37,55 @@ p.facebook a {color: #8c8c8c; ;}
   table[class=header-logo]{
       width: 100% !important;
       text-align: center!important;
-  }
-}
+	  margin-top:30px;
+	  }
+  td[class=center] {
+	  width: 100% !important;
+	  text-align:center !important;
+	  }
+  td[class=margin] {
+	  border-left: 20px solid #ca3852; 
+	  width: 100% !important;
+	  }
+  ul[class=nav] {
+      margin-left:0 !important;
+	  font:1.2em/2.2 !important;
+	  margin: 0 !important;
+	  padding:0 !important;
+	  }  
+  ul[class=nav] li {
+      margin-left: 0 !important;
+      display:block;
+      width: 100% !important;
+      float:none;
+      margin:0 !important;
+      height:30px;
+      background-color: #93293c;
+      border-bottom: 1px solid #eee;
+      padding-top:7px;
+      padding-right:0 !important;
+      padding-left:0 !important;
+      padding-bottom: 0 !important;
+      text-decoration: none;
+      border-right: none !important;
+      }
+  ul[class=nav] li.sel {
+      margin-left: 0 !important;
+      background-color: #ff637f;
+      border: 0;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      }
+  ul[class=nav] a, unsubscribe, forwardtoafriend, fblike {
+      margin-left: 20px !important;
+      border:0;
+      color: #666;
+      text-decoration: none;
+      }
+
+  table[class=contenttable] { border: none !important; }
+
+} 
  </style>
  </head>
 <body>
@@ -52,47 +98,50 @@ p.facebook a {color: #8c8c8c; ;}
   <td valign="top">
    <table style="background-color: #ca3852;" cellspacing="0" border="0" cellpadding="0" width="100%" height="200"> 
    <tr>
-  <td width="20" align="center"><img src="images/px.gif" /></td>
- <td class="max-width" width="600" height="200" align="center">
- <table class="header" cellspacing="0" border="0" cellpadding="0" height="200" align="center"> 
-   <tr>
-    <td valign="top" align="left" height="58">
-     <img src="images/px.gif" height="5" width="5" />
-     <ul class="nav">
-      <li><fblike style="color:#ffffff; text-decoration:underline;">Partager sur Facebook</fblike></li> 
-      <li><a href="http://www.rdvenligne.com" style="color:#ffffff; text-decoration:underline;">Aller sur le site</a></li>
-      <li style="border-right: none; color:#ffffff; text-decoration:underline;"><unsubscribe>Se d&eacute;sinscrire</unsubscribe></li>
-     </ul>
-    </td>
-   </tr>
+ <td>
+ <table class="max-width" cellspacing="0" border="0" cellpadding="0" height="200" align="center" width="600"> 
+  <tr>
+    <td align="left">
+    <nav role="navigation">
+        <ul class="nav">
+          <li class="sel" style="color:#ffffff;"><a href="http://www.rdvenligne.com">Visiter notre site</a></li>
+          <li style="color:#ffffff;"><forwardtoafriend>Faire suivre</forwardtoafriend></li>
+          <li style="color:#ffffff; "><fblike>Partager sur Facebook</fblike></li>
+          <li style="border-right: none;color:#ffffff; ">
+            <unsubscribe>Se désinscrire</unsubscribe>
+          </li>
+        </ul>
+      </nav></td>
+  </tr>
    <tr>
     <td width="100%" height="142">
     <table cellspacing="0" cellpadding="0" border="0" width="182" height="142" align="left" class="header-logo"> 
      <tr>
-     <td valign="top">
-      <img src="images/logo.png" />
+     <td valign="top" >
+      <img src="images/logo.png"  />
      </td>
      </tr>
     </table>
     <table cellspacing="0" cellpadding="0" border="0" width="418" height="50" align="left"> 
      <tr>
-      <td class="titre" width="418" height="50" valign="top">
-       <h1 style="color: #FFFFFF; font-size: 32px;"><multiline label="Description">Newsletter du RDV en ligne</multiline></h1>
+      <td class="margin" width="418" height="50" valign="top">
+       <h1 style="color: #FFFFFF; font-size: 32px; "><multiline label="Description">Newsletter du RDV en ligne</multiline></h1>
       </td>
      </tr>
      <tr>
-       <td><h2 style="color: #FFFFFF; font-size:18px;"><multiline label="Description">Le site du Guide Biblique pour jeunes de la Ligue pour la lecture de la Bible</multiline></h2>
+       <td class="margin"><h2 style="color: #FFFFFF; font-size:18px;"><multiline label="Description">Le site du Guide Biblique pour jeunes de la Ligue pour la lecture de la Bible</multiline></h2>
        </td>
      </tr>
     </table>
    </td></tr>
 </table>
+
  
  </td></tr>
 </table> 
 <table style="background-color: #FFFFFF;" border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
-<td width="600">
+<td>
 
  <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" align="center" style="margin-bottom: 20px;">
  <repeater>
@@ -109,10 +158,10 @@ p.facebook a {color: #8c8c8c; ;}
    </td>
    </tr>
    </table>
-   <table cellspacing="0" border="0" cellpadding="0" width="200" height="220" align="left">
+   <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="200" height="220" align="left">
    <tr>
-   <td width="200" height="190" align="left" valign="bottom">
-    <img class="hide" src="images/article1.jpg" editable="true" label="Image" width="200" height="190" alt="" border="0" />
+   <td valign="bottom" class="center">
+    <img src="images/article1.jpg" editable="true" label="Image" width="200" height="190" alt="" border="0" />
    </td>
    </tr>
    </table>  
@@ -132,7 +181,7 @@ p.facebook a {color: #8c8c8c; ;}
  <table style="background-color: #00b1f2;" cellspacing="0" border="0" cellpadding="0" width="100%" height="60"> 
  <tr>
   <td>
-   <table cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
+   <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
    <tr>
     <td width="60" height="60" valign="middle" align="left">
      <a href="http://www.facebook.com/rdvenligne"><img src="images/fb.png" width="42" height="40" style="margin-left:20px; margin-right:20px;" /></a>
@@ -156,7 +205,7 @@ p.facebook a {color: #8c8c8c; ;}
     <tr>
      <td height="150" style="padding-bottom: 5px;">
                    <datarepeater type="rss" src="http://www.facebook.com/feeds/page.php?id=155521953189&format=rss20">
- <table cellspacing="0" border="0" cellpadding="0" width="600" height="150" align="left" style="margin-bottom:10px;">
+ <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="150" align="left" style="margin-bottom:10px;">
 <tr>
         <td height="40" valign="bottom" align="left" style="margin-left:20px;">
         <p style="font-size:24px; color:#00b1f2; padding-left:20px;"><rsstitle tocitem></rsstitle></p>
@@ -181,7 +230,7 @@ p.facebook a {color: #8c8c8c; ;}
 <table style="background-color: #ca3852;" cellspacing="0" border="0" cellpadding="0" width="100%" height="60">
 <tr>
 <td>
- <table cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
+ <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
  <tr>
  <td width="450" height="60" align="left" valign="middle"><p><a href="#" style="text-transform: uppercase; color:white; font-size:24px; margin-left: 20px;">Abonne-toi au guide</a></p>
  </td>
@@ -195,7 +244,7 @@ p.facebook a {color: #8c8c8c; ;}
 <table cellspacing="0" border="0" cellpadding="0" width="100%" height="140" style="border-bottom: 1px solid #ca3852;">
 <tr>
 <td>
- <table cellspacing="0" border="0" cellpadding="0" width="600" height="160" align="center"> 
+ <table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="160" align="center"> 
  <tr>
  <td height="60" align="left" valign="bottom" colspan="2" width="450">
  <div style="margin-left:20px;"><p style="font-size:14px; color:#535353; width:380px;">Abonne-toi au guide papier et reçois 4 fois par années un guide avec un message quotidien</p></div>
@@ -221,7 +270,7 @@ p.facebook a {color: #8c8c8c; ;}
 <table cellspacing="0" border="0" cellpadding="0" width="100%" height="60">
 <tr>
 <td>
-<table cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
+<table class="max-width" cellspacing="0" border="0" cellpadding="0" width="600" height="60" align="center">
 <tr>
 <td height="60" width="80" align="center">
 <img src="images/calel.png" />
